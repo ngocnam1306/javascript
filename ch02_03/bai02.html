@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai02</title>
+    <script>
+        var m = parseFloat(prompt("nhap diem mon toan:"));
+        var p = parseFloat(prompt("nhap diem mon vat ly:"));
+        var c = parseFloat(prompt("nhap diem mon hoa hoc:"));
+        alert("diem mon toan : "+m +"   "+"diem vat ly : " +p +"   " +"diem hoa hoc : "+c);
+        var ava =(m+p+c)/3;
+        if(isNaN(m) || isNaN(p) || isNaN(c) || m<0 || p<0 || c<0
+        || p >10 || p >10 || c>10)
+        {
+            alert("vui long nhap lai gia tri phu hop");
+             m = parseFloat(prompt("nhap diem mon toan:"));
+            p = parseFloat(prompt("nhap diem mon vat ly:"));
+            c = parseFloat(prompt("nhap diem mon hoa hoc:"));
+        }
+        else
+        if (ava >=8)
+        {
+           alert("rank la : A"  +"   "+"diem trung binh la : " +ava);
+        }
+        else if(ava >=6.5)
+        {
+            alert("rank la : B"  +"   "+ "diem trung binh la : " +ava);
+        }
+        else if(ava >=5)
+        {
+            alert("rank la : C" +"   "+ "diem trung binh la : " +ava);
+        }
+        else if(ava <5)
+        {
+            alert("rank la : D"  +"   "+"diem trung binh la : " +ava);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
