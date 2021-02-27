@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai03</title>
+    <script>
+         var a = parseFloat(prompt("nhap gia tri a:"));
+        var b = parseFloat(prompt("nhap gia tri b:"));
+        var x = -b/a;
+        if(isNaN(a) || isNaN(b))
+        {
+           alert("vui long nhap so");
+           a = parseFloat(prompt("nhap gia tri a:"));
+            b = parseFloat(prompt("nhap gia tri b:"));
+        }
+        else{
+              document.write ("ax + b =0" + "<br>" +"voi a ="+a + " <br> "+"voi b ="+b + "<br>" + "thi x = "+x);
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

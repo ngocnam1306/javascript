@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai03</title>
+    <script>
+        var a = parseFloat(prompt("nhap gia tri a:"));
+        var b = parseFloat(prompt("nhap gia tri b:"));
+        var c = parseFloat(prompt("nhap gia tri c:"));
+        var delta = (b*b)-(4*a*c);
+        var x1 = (-b)/(2*a);
+        var x2 = (-b + Math.sqrt(delta)) /(4*a*c);
+        var x3 = (-b - Math.sqrt(delta)) /(4*a*c);
+        if(isNaN(a) || isNaN(b)|| isNaN(c) || a==0)
+        {
+           alert("vui long nhap gia tri phu hop");
+           a = parseFloat(prompt("nhap gia tri a:"));
+            b = parseFloat(prompt("nhap gia tri b:"));
+            c = parseFloat(prompt("nhap gia tri c:"));
+        }
+        if(delta < 0)
+        {
+            alert("phuong trinh vo nghiem");
+        }
+        if(delta == 0)
+        {
+            document.write("Phương trình có nghiệm kép:" +x1);
+        }
+        if(delta > 0){
+            document.write("Phương trình có 2 nghiệm:" +x2 +" va " +x3 );
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
